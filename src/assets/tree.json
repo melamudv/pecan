@@ -1,0 +1,124 @@
+[{
+  "title": "SQL",
+  "permission": true,
+  "trigger": false,
+  "level": [
+    {
+      "title": "database_postgres",
+      "permission": true,
+      "trigger": false,
+      "level": [
+        {
+          "title": "schema_huge_data",
+          "permission": true,
+          "trigger": false,
+          "level": [
+            {
+              "title": "table_layer",
+              "permission": true,
+              "trigger": false,
+              "level": [
+                {
+                  "title": "1"
+                },
+                {
+                  "title": "2"
+                },
+                {
+                  "title": "3"
+                }
+              ]
+            },
+            {
+              "title": "table_newTable",
+              "trigger": false,
+              "permission": true
+            },
+            {
+              "title": "table_topology",
+              "trigger": false,
+              "permission": true
+            }
+          ]
+        },
+        {
+          "title": "schema_huge_data1",
+          "trigger": false,
+          "permission": true
+        },
+        {
+          "title": "schema_tiger_data",
+          "trigger": false,
+          "permission": true
+        }
+      ]
+    },
+    {
+      "title": "postgres2",
+      "trigger": false,
+      "permission": true
+    }
+  ]
+},
+  {
+    "title": "SQL2",
+    "permission": true,
+    "trigger": false,
+    "level": [
+      {
+        "title": "database_postgres",
+        "permission": false,
+        "trigger": false,
+        "level": [
+          {
+            "title": "schema_huge_data",
+            "permission": true,
+            "trigger": true,
+            "level": [
+              {
+                "title": "table_layer",
+                "permission": true,
+                "trigger": false,
+                "level": [
+                  {
+                    "title": "1"
+                  },
+                  {
+                    "title": "2"
+                  },
+                  {
+                    "title": "3"
+                  }
+                ]
+              },
+              {
+                "title": "table_newTable",
+                "trigger": false,
+                "permission": true
+              },
+              {
+                "title": "table_topology",
+                "trigger": false,
+                "permission": true
+              }
+            ]
+          },
+          {
+            "title": "schema_huge_data1",
+            "trigger": false,
+            "permission": true
+          },
+          {
+            "title": "schema_tiger_data",
+            "trigger": false,
+            "permission": true
+          }
+        ]
+      },
+      {
+        "title": "database_postgres2",
+        "trigger": true,
+        "permission": true
+      }
+    ]
+  }]

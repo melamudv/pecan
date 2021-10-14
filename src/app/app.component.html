@@ -1,3 +1,28 @@
-<h1>
-  {{title}}
-</h1>
+<div>
+  <div *ngFor="let node of tree">
+    <app-print-node [data]="node" icon="bi-globe"></app-print-node>
+    <div *ngIf="node.trigger">
+      <div *ngFor="let database of node.level" class="pl10">
+        <app-print-node  [data]="database" icon="bi-hdd-stack-fill"></app-print-node>
+        <div *ngIf="database.trigger">
+          <div *ngFor="let schema of database.level" class="pl20">
+            <app-print-node  [data]="schema" icon="bi-list-task"></app-print-node>
+            <div *ngIf="schema.trigger">
+              <div  *ngFor="let table of schema.level" class="pl30">
+                <app-print-node [data]="table" icon="bi-table"></app-print-node>
+                <div *ngIf="table.trigger">
+                  <div *ngFor="let column of table.level">
+                    <div class="pl40">
+                      <i class="bi bi-columns"></i>
+                      {{column.title}}
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

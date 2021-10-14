@@ -1,0 +1,5 @@
+<div>
+  <button [disabled]="!data.permission" *ngIf="data?.level?.length > 0" (click)="data.trigger=!data.trigger"><i [ngClass]="{'bi-chevron-down': data.trigger, 'bi-chevron-right': !data.trigger}" class="bi"></i></button>
+  <i class="bi {{icon}}"></i>
+  {{data.title}}
+</div>
