@@ -5,6 +5,7 @@
   "level": [
     {
       "title": "database_postgres",
+      "icon": "bi-globe",
       "permission": true,
       "trigger": false,
       "level": [
