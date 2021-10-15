@@ -11,6 +11,6 @@
 8. When you want add/remove permission change value of permission to false
 9. Without test's (was not required)
 10. Check for if node have childs if not not print arrow 
-11.
+11. Implement recursive function to print data tree
 
 
